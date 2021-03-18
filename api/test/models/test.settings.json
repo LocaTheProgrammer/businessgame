@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "name": "Test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tests"
+    },
+    "PassedTest": {
+      "type": "boolean"
+    },
+    "CorrectAnswers": {
+      "type": "integer"
+    }
+  }
+}
